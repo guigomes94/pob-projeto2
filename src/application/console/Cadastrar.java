@@ -50,9 +50,6 @@ public class Cadastrar {
 			Book b6 = Facade.saveOrUpdateBook("Sistemas Operacionais Modernos", 864, genre3, author4);
 			
 			LocalDate d1 = LocalDate.of(2020, 12, 20);
-			System.out.println("\nCadastrando reservas...");
-			Facade.saveOrUpdateReservation(null, d1, u1, b1);
-			
 			LocalDate d2 = LocalDate.of(2020, 12, 14);
 			LocalDate d3 = LocalDate.of(2020, 12, 8);
 			LocalDate d4 = LocalDate.of(2020, 12, 12);
@@ -60,6 +57,10 @@ public class Cadastrar {
 			LocalDate d6 = LocalDate.of(2020, 12, 20);
 			LocalDate d7 = LocalDate.of(2020, 12, 21);
 			LocalDate d8 = LocalDate.of(2020, 12, 30);
+			
+			System.out.println("\nCadastrando reservas...");
+			Facade.saveOrUpdateReservation(null, d1, u1, b1);
+			Facade.saveOrUpdateReservation(null, d6, u3, b2);
 			
 			System.out.println("\nCadastrando empréstimos...");
 			Facade.saveOrUpdateLoan(null, d3, u2, b5, d5);

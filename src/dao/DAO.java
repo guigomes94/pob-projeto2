@@ -21,6 +21,7 @@ public abstract class DAO<T> implements DAOInterface<T> {
 			//			mudar as property do persistence.xml  
 			//			as property especificas do hibernate nao podem ser alteradas aqui
 			//			---------------------------------------------------------------
+			@SuppressWarnings("unused")
 			HashMap<String,String> propriedades = new HashMap<String,String>();		
 			//			propriedades.put(PersistenceUnitProperties.JDBC_DRIVER, "org.postgresql.Driver" );	
 			//			propriedades.put(PersistenceUnitProperties.JDBC_URL, "jdbc:postgresql://localhost4:5432/agenda");
